@@ -1,1 +1,1 @@
-web: gunicorn gameguide.wsgi
+web: gunicorn sushi_cat.wsgi
