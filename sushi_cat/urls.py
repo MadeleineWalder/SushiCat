@@ -15,7 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+# 1 from restaurant.views import <ViewName>
+# 2 from .import views -better reusability/class based views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # 1 path('', <ViewName>, name='<ViewName>')
+    # 2 path('', views.<ViewName>.as_view(), name='home')
 ]
+
+# blank path('',) =home page

@@ -16,6 +16,9 @@ class Booking(models.Model):
     time = models.TimeField()
     number_of_people = models.IntegerField()
 
+    def __str__(self):
+        return f"{self.date}"
+
 
 # class Edit(models.Model):
 
