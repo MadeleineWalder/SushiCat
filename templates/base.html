@@ -1,0 +1,59 @@
+{% load static %}
+<!-- I dont know what this does -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- add links like fonts and boostrap + bootstrap script here -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- I dont see how this link is gonna reach the css file, surely it must be something like /static/css/style.css -->
+    <title>Sushi Cat</title>
+</head>
+
+<!-- Add in bootstrap classes to elements! -->
+
+<body class="">
+
+    <!-- Nav bar -->
+    <nav class="">
+        <div class="">
+            <a href="{% url 'home' %}"><h1>Sushi Cat</h1></a>
+            <div>
+                <ul>
+                    <li>
+                        <a class="active" href="{% url 'home' %}">Home</a>
+                    </li>
+                    {% if user.is_authenticated %}
+                    <li>
+                        <a href="{% url 'account_logout' %}">Logout</a>
+                    </li>
+                    {% else %}
+                    <li>
+                        <a href="{% url 'account_signup' %}">Register</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'account_login' %}">Login</a>
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Block content -->
+    <!-- He has this inside a <main> </main> tag with bootstrap classes, consider this? -->
+    {% block content %}
+    <!-- Block content goes here -->
+    {% endblock content %}
+
+    <!-- Footer -->
+    <footer>
+        <p>Follow us on social media!</p>
+    </footer>
+
+
+</body>
+</html>
