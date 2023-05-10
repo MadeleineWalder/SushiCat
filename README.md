@@ -55,3 +55,13 @@ these might be useful to have as good examples of implementing bootstrap columns
 theres one for login, one for logout and one for signup
 you have all the same actual code in them as he does, youre just missing the styling
 aka the hundreds of divs and classes
+
+messages
+added messages with bootstrap
+
+DO TO NEXT:
+find a way for users to actually access bookings
+make sure they have full CRUD and everything works
+also messages for stuff like 'are you sure you want to delete' must be there and work
+once everything is good and working make the bookings form/page look pretty
+then focus on making the home page pretty last
