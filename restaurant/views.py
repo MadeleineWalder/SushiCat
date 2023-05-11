@@ -1,10 +1,12 @@
 from django.shortcuts import render
-from django.views.generic.list import ListView
 from .models import Booking
 
 # Create your views here.
 
 
-class BookingList(ListView):
-    model = Booking
-    template_name = 'index.html'
+def get_bookings_list(request):
+    bookings = Booking.objects.all()
+    context = {
+        'bookings': bookings
+    }
+    return render (request, 'restaurant/restaurant_bookings.html', context)
