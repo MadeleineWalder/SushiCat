@@ -1,6 +1,7 @@
 from django import forms
 from django.db import models
 from .models import Booking
+from .widgets import DatePickerInput, TimePickerInput
 
 
 class BookingForm(forms.ModelForm):
@@ -12,3 +13,8 @@ class BookingForm(forms.ModelForm):
             'time',
             'number_of_people'
         ]
+
+        widgets = {
+            'date': DatePickerInput(),
+            'time': TimePickerInput(),
+        }
