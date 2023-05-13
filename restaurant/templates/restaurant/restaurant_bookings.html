@@ -18,6 +18,16 @@
             <td> {{ booking.date }} </td>
             <td> {{ booking.time }} </td>
             <td> {{ booking.number_of_people }} </td>
+            <td>
+                <a href="/edit/{{ booking.id }}">
+                    <button>Edit</button>
+                </a>
+            </td>
+            <td>
+                <a href="/delete/{{ booking.id }}">
+                    <button>Delete</button>
+                </a>
+            </td>
         </tr>
         {% empty %}
         <tr><td>You have no bookings.</td></tr>
