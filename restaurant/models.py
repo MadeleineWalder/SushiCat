@@ -8,6 +8,7 @@ from django.contrib.auth.models import User
 
 
 class Booking(models.Model):
+    customer = models.ForeignKey(User, on_delete=models.CASCADE)
     booking_name = models.CharField(max_length=20, null=False, blank=False)
     date = models.DateField()
     time = models.TimeField()

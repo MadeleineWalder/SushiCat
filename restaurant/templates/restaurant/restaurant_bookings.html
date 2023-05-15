@@ -2,22 +2,30 @@
 
 {% block content %}
 
-<h2>Add hero image</h2>
-<h2 class="red">Add menu</h2>
-<h3>Bookings:</h3>
+<h3>Add hero image</h3>
+<h3>Add menu</h3>
+
 <div>
+    {% if user.is_authenticated %}
+
+    <h3>Bookings:</h3>
     <table>
         {% for booking in bookings %}
+        {% if booking.customer == user %}
         <tr>
+            <td>Name:</td>
             <td> {{ booking.booking_name }} </td>
         </tr>
         <tr>
+            <td>Date:</td>
             <td> {{ booking.date }} </td>
         </tr>
         <tr>
+            <td>Time:</td>
             <td> {{ booking.time }} </td>
         </tr>
         <tr>
+            <td>People:</td>
             <td>{{ booking.number_of_people }}</td>
         </tr>
         <tr>
@@ -32,10 +40,17 @@
                 </a>
             </td>
         </tr>
+        {% endif %}
         {% empty %}
         <tr><td>You have no bookings.</td></tr>
         {% endfor %}
     </table>
     <a href="/add">Add a Booking</a>
+
+    {% else %}
+
+    <p>Please login to book.</p>
+
+    {% endif %}
 </div>
 {%endblock%}

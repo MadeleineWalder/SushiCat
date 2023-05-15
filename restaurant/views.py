@@ -17,6 +17,7 @@ def add_bookings(request):
     if request.method == 'POST':
         form = BookingForm(request.POST)
         if form.is_valid():
+            form.instance.customer = request.user
             form.save()
             return redirect('get_bookings_list')
     form = BookingForm()
