@@ -35,8 +35,6 @@
                 </a>
             </td>
             <td>
-                <!-- /delete/{{ booking.id }} -->
-
                 <!-- Button trigger modal -->
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-{{booking.id}}">
                     Delete
@@ -57,7 +55,9 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                                <button type="button" class="btn btn-primary">Delete</button>
+                                <a href="{% url 'delete_booking' booking.id %}">
+                                    <button type="button" class="btn btn-primary">Delete</button>
+                                </a>
                             </div>
                         </div>
                     </div>

@@ -16,9 +16,3 @@ class Booking(models.Model):
 
     def __str__(self):
         return f"{self.date}"
-
-
-# class Edit(models.Model):
-
-
-# class Delete(models.Model):
