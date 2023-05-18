@@ -2,7 +2,7 @@
 
 .navbar {
     background-color: black;
-    font-family: 'Shadows Into Light Two', cursive;
+    font-family: 'Shadows Into Light Two', cursive, sans-serif;
 }
 
 .brand {
@@ -16,8 +16,8 @@
 }
 
 .nav-item {
-    font-size: 1.2rem;
-    letter-spacing: 0.2rem;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
 }
 
 /* Footer */
@@ -25,4 +25,16 @@
 footer {
     background-color: black;
     color: whitesmoke;
+    height: auto;
+    font-family: 'Shadows Into Light Two', cursive, sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+}
+
+.icons i {
+    color: whitesmoke;
+}
+
+.icons i:hover {
+    color: yellow;
 }
