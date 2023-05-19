@@ -55,3 +55,7 @@ def view_booking(request):
         'bookings': bookings
     }
     return render(request, 'restaurant/view_booking.html', context)
+
+
+def menu(request):
+    return render(request, 'restaurant/menu.html')

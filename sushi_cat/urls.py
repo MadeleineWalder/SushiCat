@@ -27,4 +27,5 @@ urlpatterns = [
     path('delete/<booking_id>', views.delete_booking, name='delete'),
     path('delete_booking/<int:booking_id>', views.delete_booking, name='delete_booking'),
     path('view_booking', views.view_booking, name='view_booking'),
+    path('menu', views.menu, name='menu'),
 ]
