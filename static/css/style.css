@@ -20,6 +20,60 @@
     letter-spacing: 2px;
 }
 
+body {
+    background-color: black !important;
+}
+
+/* Hero Image */
+
+.masthead {
+    background-image: url(/static/images/sushi1medium2.jpg);
+    background-size: cover;
+    min-height: 80vh;
+    position: relative;
+    color: whitesmoke;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+}
+
+h1 {
+    font-size: 4rem !important;
+    margin-bottom: 0 !important;
+}
+
+.color-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+/* Sign Up Page */
+
+.sign-up-form {
+    color: whitesmoke;
+    text-align: center;
+}
+
+/* Sign In Page */
+
+.sign-in-form {
+    color: whitesmoke;
+    text-align: center;
+}
+
+/* Sign Out Page */
+
+.sign-out-form {
+    color: whitesmoke;
+    text-align: center;
+}
+
+/* Booking Page */
+
+.booking-form {
+    color: whitesmoke;
+}
+
 /* Footer */
 
 footer {
@@ -37,4 +91,16 @@ footer {
 
 .icons i:hover {
     color: yellow;
+}
+
+/* Media Queries */
+
+/* Masthead */
+@media (max-width: 1685px) {
+    .masthead {
+        min-height: 30vh;
+    }
+    h1 {
+        font-size: calc(1rem + 3.3vw) !important;
+    }
 }

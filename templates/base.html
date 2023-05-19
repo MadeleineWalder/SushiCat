@@ -32,6 +32,9 @@
                     <li class="nav-item">
                         <a class="nav-link {% block homepageactive %} {% endblock %}" aria-current="page" href="{% url 'get_bookings_list' %}">Home</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% block bookingpageactive %} {% endblock %}" aria-current="page" href="{% url 'view_booking' %}">Bookings</a>
+                    </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
                         <a class="nav-link {% block signoutpageactive %} {% endblock %}" href="{% url 'account_logout' %}">Sign-out</a>
