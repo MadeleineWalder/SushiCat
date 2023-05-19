@@ -74,9 +74,11 @@
 
     {% else %}
 
-    <a href="{% url 'account_login' %}">
-        <button>Login to book.</button>
-    </a>
+    <div class="login-to-book">
+        <a href="{% url 'account_login' %}">
+            <button>Login to book.</button>
+        </a>
+    </div>
 
     {% endif %}
 </div>

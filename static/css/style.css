@@ -1,7 +1,7 @@
 /* Navbar */
 
 .navbar {
-    background-color: black;
+    background-color: #141213;
     font-family: 'Shadows Into Light Two', cursive, sans-serif;
 }
 
@@ -21,13 +21,13 @@
 }
 
 body {
-    background-color: black !important;
+    background-color: #141213 !important;
 }
 
 /* Hero Image */
 
 .masthead {
-    background-image: url(/static/images/sushi1medium2.jpg);
+    background-image: url(/static/images/sushi2.1.jpg);
     background-size: cover;
     min-height: 80vh;
     position: relative;
@@ -37,7 +37,6 @@ body {
 
 h1 {
     font-size: 4rem !important;
-    margin-bottom: 0 !important;
 }
 
 .color-overlay {
@@ -55,6 +54,10 @@ h1 {
 }
 
 /* Sign In Page */
+
+.login-to-book {
+    text-align: center;
+}
 
 .sign-in-form {
     color: whitesmoke;
@@ -84,7 +87,7 @@ h1 {
 /* Footer */
 
 footer {
-    background-color: black;
+    background-color: #141213;
     color: whitesmoke;
     height: auto;
     font-family: 'Shadows Into Light Two', cursive, sans-serif;
