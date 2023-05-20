@@ -19,7 +19,7 @@ def add_bookings(request):
         if form.is_valid():
             form.instance.customer = request.user
             form.save()
-            return redirect('get_bookings_list')
+            return redirect('view_booking')
     form = BookingForm()
     context = {
         'form': form
@@ -33,7 +33,7 @@ def edit_booking(request, booking_id):
         form = BookingForm(request.POST, instance=booking)
         if form.is_valid():
             form.save()
-            return redirect('get_bookings_list')
+            return redirect('view_booking')
     form = BookingForm(instance=booking)
     context = {
         'form': form
@@ -46,7 +46,7 @@ def delete_booking(request, booking_id):
     print(booking_id)
     booking = get_object_or_404(Booking, id=booking_id)
     booking.delete()
-    return redirect('get_bookings_list')
+    return redirect('view_booking')
 
 
 def view_booking(request):

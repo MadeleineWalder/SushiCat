@@ -2,17 +2,17 @@
 
 {% block content %}
 
-<div>
-    <h3>Edit a Booking</h3>
-    <form method="POST">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <div>
-            <p>
-                <button type="submit">Save</button>
-            </p>
-        </div>
-    </form>
+<div class="container d-flex justify-content-center"></divclass>
+    <div class="change-form">
+        <h2 class="forms-title">Edit a Booking:</h2>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <div class="center-btn">
+                <button type="submit" class="btn btn-success">Save</button>
+            </div>
+        </form>
+    </div>
 </div>
 
 {%endblock%}
