@@ -62,11 +62,11 @@ a {
     text-align: left;
 }
 
-.sign-up-title {
+.forms-title {
     text-align: center;
 }
 
-.sign-up-btn {
+.center-btn {
     text-align: center;
 }
 
@@ -101,6 +101,20 @@ a {
 .booking-form {
     color: whitesmoke;
 }
+
+/* Add Booking Page */
+
+.add-booking-form {
+    text-align: left;
+    color: whitesmoke;
+}
+
+/* Modal */
+
+.modal-content {
+    color: black;
+}
+
 
 /* Menu Page */
 
