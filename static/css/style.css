@@ -46,6 +46,15 @@ h1 {
     background-color: rgba(0, 0, 0, .2);
 }
 
+.btn {
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+a {
+    text-decoration: none !important;
+}
+
 /* Sign Up Page */
 
 .sign-up-form {
@@ -83,6 +92,17 @@ h1 {
 .booking-form {
     color: whitesmoke;
 }
+
+/* Menu Page */
+
+.menu-title {
+    font-family: 'Shadows Into Light Two', cursive, sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-decoration: underline 1px solid whitesmoke;
+    margin-bottom: 3%;
+}
+
 
 /* Footer */
 
