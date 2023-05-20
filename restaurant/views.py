@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Booking
 from .forms import BookingForm
+import datetime
 
 # Create your views here.
 
@@ -59,3 +60,7 @@ def view_booking(request):
 
 def menu(request):
     return render(request, 'restaurant/menu.html')
+
+
+currentDT = datetime.datetime.now().strftime("%d-%m-%Y")
+print("Today: %s\nYou should select a date in the next 10 days." % str(currentDT))
