@@ -75,8 +75,9 @@
     {% else %}
 
     <div class="login-to-book">
+        <p>You are not signed in. Please sign to book.</p>
         <a href="{% url 'account_login' %}">
-            <button>Login to book.</button>
+            <button class="btn-success btn-lg">Sign In</button>
         </a>
     </div>
 

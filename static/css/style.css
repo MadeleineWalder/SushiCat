@@ -59,6 +59,14 @@ a {
 
 .sign-up-form {
     color: whitesmoke;
+    text-align: left;
+}
+
+.sign-up-title {
+    text-align: center;
+}
+
+.sign-up-btn {
     text-align: center;
 }
 
@@ -66,6 +74,7 @@ a {
 
 .login-to-book {
     text-align: center;
+    margin-top: 10%;
 }
 
 .sign-in-form {
