@@ -20,6 +20,7 @@ class Booking(models.Model):
     time = models.TimeField()
     number_of_people = models.IntegerField()
 
+
     class Meta:
         ordering = ['date']
 
