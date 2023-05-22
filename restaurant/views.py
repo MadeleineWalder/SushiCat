@@ -59,14 +59,24 @@ def edit_booking(request, booking_id):
     booking_id: The id of the booking being edited.
     """
     booking = get_object_or_404(Booking, id=booking_id, customer=request.user)
-    if request.method == 'POST':
-        form = BookingForm(request.POST, instance=booking)
-        if form.is_valid():
-            booking_exists = Booking.objects.filter(customer=request.user, date=form['date'], time=form['time']).exclude(id=booking_id).exists()
-            if booking_exists:
-                raise ValidationError("Booking already exists")
-            form.save()
-            return redirect('view_booking')
+    submitbutton = request.POST.get("submit")
+
+    booking_name = ''
+    date = ''
+    time = ''
+    number_of_people = ''
+
+    form = BookingForm(request.POST, instance=booking)
+    if form.is_valid():
+        booking_exists = Booking.objects.filter(
+            customer=request.user,
+            date=request.POST['date'],
+            time=request.POST['time']).exists()
+        if booking_exists:
+            raise ValidationError("Booking already exists")
+        form.instance.customer = request.user
+        form.save()
+        return redirect('view_booking')
     form = BookingForm(instance=booking)
     context = {
         'form': form

@@ -2,17 +2,36 @@
 
 {% block content %}
 
-<div class="container d-flex justify-content-center"></divclass>
+<div class="container d-flex justify-content-center">
     <div class="change-form">
         <h2 class="forms-title">Edit a Booking:</h2>
         <form method="POST">
             {% csrf_token %}
-            {{ form.as_p }}
+
+            {% for field in form %}
+                {{field.label_tag}}
+                {{field}}
+                <p class="error"></p>
+            {% endfor %}</p>
+
             <div class="center-btn">
-                <button type="submit" class="btn btn-success">Save</button>
+                <button type="submit" class="btn btn-success">
+                    Save
+                </button>
             </div>
         </form>
     </div>
 </div>
+
+<script>
+    const dateField = document.querySelector('[name="date"]');
+    dateField.onchange = (event) => {
+        if (new Date(event.target.value) < new Date()) {
+            dateField.nextElementSibling.innerText = "PLEASE PICK A FUTURE DATE!"
+        } else {
+            dateField.nextElementSibling.innerText = ""
+        }
+    }
+</script>
 
 {%endblock%}

@@ -22,39 +22,17 @@
 
         </form>
     </div>
-    <!--
-    <button id="alert-btn" class="btn btn-primary">
-        button
-    </button>
-    -->
 </div>
 
 <script>
     const dateField = document.querySelector('[name="date"]');
     dateField.onchange = (event) => {
         if (new Date(event.target.value) < new Date()) {
-            dateField.nextElementSibling.innerText = "Please pick a future date"
+            dateField.nextElementSibling.innerText = "PLEASE PICK A FUTURE DATE!"
         } else {
             dateField.nextElementSibling.innerText = ""
         }
     }
-    // // Trigger button
-    // let button = document.querySelector("#alert-btn");
-
-    // // Alert container
-    // let container = document.querySelector("#alert-container");
-
-    // // Create click event listener on trigger button
-    // button.addEventListener("click", () => {
-
-    // // When user click on trigger #button, insert .alert element into #container
-    // container.innerHTML =
-    //     `<div class="alert alert-primary alert-dismissible fade" role="alert">
-    //     Primary alert with custom close button
-    //     <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close"></button>
-    //     </div>`
-    // ;
-    // });
 </script>
 
 {%endblock%}
