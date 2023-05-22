@@ -3,8 +3,19 @@ from django.db import models
 from .models import Booking
 from .widgets import DatePickerInput, TimePickerInput
 
+from django.forms import ValidationError
+import datetime
+
+
+def date_validation(date):
+    if date < datetime.date.today():
+        print("VALIDATOR RUNNING")
+        raise ValidationError("Please pick a future date")
+
 
 class BookingForm(forms.ModelForm):
+    date = forms.DateField(validators=[date_validation], widget=DatePickerInput)
+
     class Meta:
         model = Booking
         fields = [

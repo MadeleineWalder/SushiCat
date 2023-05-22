@@ -12,14 +12,9 @@ from django.core.exceptions import ValidationError
 class Booking(models.Model):
     customer = models.ForeignKey(User, on_delete=models.CASCADE)
     booking_name = models.CharField(max_length=20, null=False, blank=False)
-
-    def Date_validation(date):
-        if date < datetime.date.today():
-            raise ValidationError("Youre no time traveler Marty")
-    date = models.DateField(default=datetime.date.today, validators=[Date_validation])
+    date = models.DateField()
     time = models.TimeField()
     number_of_people = models.IntegerField()
-
 
     class Meta:
         ordering = ['date']
