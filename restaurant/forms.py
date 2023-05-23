@@ -9,9 +9,10 @@ import datetime
 
 def date_validation(date):
     """
-    The function to validate the date the user picks.
+    Validates the date by checkig that it is not older
+    than the current date, so user cannot book in the past.
     Parameter:
-    Date: The date picked in the date field by the user.
+    date: The date picked in the date field by the user.
     """
     if date < datetime.date.today():
         print("VALIDATOR RUNNING")
@@ -19,7 +20,15 @@ def date_validation(date):
 
 
 class BookingForm(forms.ModelForm):
-    date = forms.DateField(validators=[date_validation], widget=DatePickerInput)
+    """
+    Sets the fields and the widgets for the form values.
+    Parameter:
+    forms.ModelForm: Imports the booking form from the model
+    """
+    date = forms.DateField(
+        validators=[date_validation],
+        widget=DatePickerInput
+    )
 
     class Meta:
         model = Booking
