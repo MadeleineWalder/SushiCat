@@ -9,13 +9,11 @@ import datetime
 
 def get_bookings_list(request):
     """
-    
+    Displays the home page.
+    Was previously the bookings page before
+    they were moved to a separate page.
     """
-    bookings = Booking.objects.all()
-    context = {
-        'bookings': bookings
-    }
-    return render(request, 'restaurant/restaurant_bookings.html', context)
+    return render(request, 'restaurant/restaurant_bookings.html')
 
 
 @login_required
@@ -86,7 +84,9 @@ def edit_booking(request, booking_id):
 
 def delete_booking(request, booking_id):
     """
-
+    Gets the booking clicked on and deletes it
+    Parameter:
+    booking_id: Gets the specific booking to be deleted
     """
     print(request)
     print(booking_id)
@@ -97,7 +97,7 @@ def delete_booking(request, booking_id):
 
 def view_booking(request):
     """
-
+    Gets all the users bookings and displays them
     """
     bookings = Booking.objects.all()
     context = {
@@ -108,6 +108,6 @@ def view_booking(request):
 
 def menu(request):
     """
-
+    Displays the menu page
     """
     return render(request, 'restaurant/menu.html')
