@@ -77,8 +77,14 @@ def edit_booking(request, booking_id):
             customer=request.user,
             date=request.POST['date'],
             time=request.POST['time']).exists()
+        
+        # if the booking already exists
         if booking_exists:
-            raise ValidationError("Booking already exists")
+            # set an error message
+            messages.error(request, "Booking already exists")
+            # return to booking page
+            return render(request, 'restaurant/add_bookings.html', {'form': BookingForm()})
+        
         form.instance.customer = request.user
         form.save()
         return redirect('view_booking')
