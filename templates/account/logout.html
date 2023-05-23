@@ -6,10 +6,12 @@
 
 {% block content %}
 
+<!-- Sign out page -->
 <div class="container d-flex justify-content-center">
   <div class="sign-out-form">
     <h2>{% trans "Sign Out" %}</h2>
 
+    <!-- Sign out form displayed here -->
     <p>{% trans 'Are you sure you want to sign out?' %}</p>
 
     <form method="post" action="{% url 'account_logout' %}">

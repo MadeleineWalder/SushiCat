@@ -2,8 +2,10 @@
 {% block bookingpageactive %} active {% endblock %}
 {% block content %}
 
+<!-- View user bookings page -->
 <div class="container">
     <div class="booking-form">
+        <!-- Displays bookings to signed in users, else requires them to sign in -->
         {% if user.is_authenticated %}
 
         <h3>Bookings:</h3>
@@ -27,11 +29,13 @@
                 <td>{{ booking.number_of_people }}</td>
             </tr>
             <tr>
+                <!-- Edit booking button -->
                 <td>
                     <a href="/edit/{{ booking.id }}">
                         <button class="btn btn-warning btn-sm">Edit</button>
                     </a>
                 </td>
+                <!-- Delete booking button -->
                 <td>
                     <!-- Button trigger modal -->
                     <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modal-{{booking.id}}">
@@ -69,6 +73,7 @@
             </tr>
             {% endfor %}
         </table>
+        <!-- Add booking button -->
         <div class="container d-flex justify-content-center">
             <div>
                 <a href="/add">
@@ -77,7 +82,7 @@
             </div>
         </div>
         {% else %}
-
+        <!-- Sign in to book button -->
         <div class="login-to-book">
             <p>You are not signed in. Please sign to book.</p>
             <a href="{% url 'account_login' %}">

@@ -22,6 +22,7 @@ def date_validation(date):
 class BookingForm(forms.ModelForm):
     """
     Sets the fields and the widgets for the form values.
+    Attaches the date validator to the date field.
     Parameter:
     forms.ModelForm: Imports the booking form from the model
     """

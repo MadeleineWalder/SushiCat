@@ -10,6 +10,11 @@ from django.core.exceptions import ValidationError
 
 
 class Booking(models.Model):
+    """
+    Creates the booking model database.
+    Defines each field type and any attributes.
+    Orders bookings by soonest booking date first.
+    """
     customer = models.ForeignKey(User, on_delete=models.CASCADE)
     booking_name = models.CharField(max_length=20, null=False, blank=False)
     date = models.DateField()
