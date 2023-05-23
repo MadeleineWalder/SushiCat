@@ -16,6 +16,14 @@
                 <p class="error"></p>
             {% endfor %}</p>
 
+            {% for message in messages %}
+                {% with message.level as level %}
+                    {% if level == 40 %}
+                        <p class="error">{{ message }}</p>
+                    {% endif %}
+                {% endwith %}
+            {% endfor %}
+
             <!-- Submit booking button -->
             <div class="center-btn">
                 <button type="submit" class="btn btn-success">
