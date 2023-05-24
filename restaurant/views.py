@@ -3,9 +3,17 @@ from .models import Booking
 from .forms import BookingForm
 from django.contrib.auth.decorators import login_required
 import datetime
-
+from django.template import RequestContext
 from django.contrib import messages
 # Create your views here.
+
+
+def handler404(request, exception):
+    """
+    Returns my custom 404 page to the user
+    when an incorrect url is typed
+    """
+    return render(request, 'restaurant/custom_404.html', status=404)
 
 
 def get_bookings_list(request):

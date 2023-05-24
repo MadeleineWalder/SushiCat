@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from restaurant import views
+from restaurant.views import handler404
 
 
 urlpatterns = [
@@ -29,3 +30,6 @@ urlpatterns = [
     path('view_booking', views.view_booking, name='view_booking'),
     path('menu', views.menu, name='menu'),
 ]
+
+
+handler404 = 'restaurant.views.handler404'
