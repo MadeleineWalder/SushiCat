@@ -31,11 +31,12 @@ body {
     background-size: cover;
     min-height: 80vh;
     position: relative;
-    color: whitesmoke;
+    color: #fdfcfa;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
 }
 
 h1 {
+    font-family: 'Roboto', sans-serif;
     font-size: 4rem !important;
 }
 
@@ -58,7 +59,7 @@ a {
 /* Sign Up Page */
 
 .sign-up-form {
-    color: whitesmoke;
+    color: #fdfcfa;
     text-align: left;
 }
 
@@ -78,60 +79,65 @@ a {
 }
 
 .sign-in-form {
-    color: whitesmoke;
+    color: #fdfcfa;
     text-align: center;
 }
 
 /* Sign Out Page */
 
 .sign-out-form {
-    color: whitesmoke;
+    color: #fdfcfa;
     text-align: center;
 }
 
 /* Menu Page */
 
 .menu {
-    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    color: #fdfcfa;
     text-align: center;
+}
+
+h4 {
+    padding-top: 1%;
+}
+
+.menu-title {
+    font-family: 'Shadows Into Light Two', cursive, sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-decoration: underline 1px solid #fdfcfa;
+    margin-bottom: 3%;
 }
 
 /* Booking Page */
 
+h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
 .booking-form {
-    color: whitesmoke;
+    color: #fdfcfa;
 }
 
 /* Add Booking Page */
 
 .change-form {
     text-align: left;
-    color: whitesmoke;
+    color: #fdfcfa;
 }
 
 /* Modal */
 
 .modal-content {
-    color: black;
+    color: #141213;
 }
-
-
-/* Menu Page */
-
-.menu-title {
-    font-family: 'Shadows Into Light Two', cursive, sans-serif;
-    font-size: 2.5rem;
-    letter-spacing: 2px;
-    text-decoration: underline 1px solid whitesmoke;
-    margin-bottom: 3%;
-}
-
 
 /* Footer */
 
 footer {
     background-color: #141213;
-    color: whitesmoke;
+    color: #fdfcfa;
     height: auto;
     font-family: 'Shadows Into Light Two', cursive, sans-serif;
     font-size: 1.3rem;
@@ -139,11 +145,11 @@ footer {
 }
 
 .icons i {
-    color: whitesmoke;
+    color: #fdfcfa;
 }
 
 .icons i:hover {
-    color: yellow;
+    color: #a4bc13;
 }
 
 /* Media Queries */
