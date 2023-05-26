@@ -17,6 +17,8 @@
 https://github.com/users/MadeleineWalder/projects/5
 
 Here you can see:
+- The wireframe
+- User Stories
 - Design Features
 - Structural Features
 - Future Features

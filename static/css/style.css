@@ -112,8 +112,9 @@ h4 {
 
 /* Booking Page */
 
-h3 {
+.booking-title {
     font-family: 'Roboto', sans-serif;
+    padding-top: 1%;
 }
 
 .booking-form {
@@ -125,6 +126,10 @@ h3 {
 .change-form {
     text-align: left;
     color: #fdfcfa;
+}
+
+.btn-extra {
+    padding-top: 10% !important;
 }
 
 /* Modal */

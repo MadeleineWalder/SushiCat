@@ -8,7 +8,7 @@
         <!-- Displays bookings to signed in users, else requires them to sign in -->
         {% if user.is_authenticated %}
 
-        <h3>Bookings:</h3>
+        <h3 class="booking-title">Bookings:</h3>
         <table class="display-bookings-table">
             {% for booking in bookings %}
             {% if booking.customer == user %}
@@ -75,7 +75,7 @@
         </table>
         <!-- Add booking button -->
         <div class="container d-flex justify-content-center">
-            <div>
+            <div class="btn-extra">
                 <a href="/add">
                     <button class="btn btn-primary btn-sm">Add Booking</button>
                 </a>
