@@ -224,21 +224,48 @@ Delete booking page on mobile:
 
 ### Validator Testing
 
-- I used the [W3C HTML Validator](https://validator.w3.org/#validate_by_input) to test my html. The results showed several errors which I then fixed, resulting in 0 errors.
+- I used the [W3C HTML Validator](https://validator.w3.org/#validate_by_input) to test my html.
 
-HTML validation after errors fixed:
+The home page:
+The results showed an error in two places where an anchor tag is wrapping the buttons. I did some research and I couldn't find out **why** this is bad practise. I even found one website which gave an example of some html where the button was wrapped in anchor tags. The website actually offers coding course which I almost enrolled on myself. A link to the page is here: https://www.shecodes.io/athena/17038-how-to-add-a-link-to-my-button-in-html
 
-![The W3C Validator showing no errors in my HTML](/docs/screenshots/cssvalid.jpg)
+The only other solution I could find was to remove the button tags and use divs instead, but style them like buttons. Unfortunately I dont think I will have time to implement this as I'm worried about the implications this will cause so close to my deadline.
 
-- I used the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) to test my CSS. There were a couple of minor errors which were easy to fix, resulting in 0 errors.
+![The W3C Validator showing my HTML](/docs/screenshots/hpvalid1.jpg)
 
-CSS validation after errors fixed:
+The menu page:
+Here there were no errors.
 
-![The W3C Validator showing no errors in my CSS]()
+![The W3C Validator showing my HTML](/docs/screenshots/bvalid.jpg)
+
+The booking page:
+I made sure to add a booking here before copying the source code so that could be tested too. I'm not sure what is going on with these errors. I have been looking over my code and all the errors say I have unclosed elements but all of mine are closed properly.
+As an example the final error says that the main tag is unclosed, but you can clearly see that it is:
+
+![The W3C Validator showing my HTML](/docs/screenshots/vbvalid.jpg)
+
+![The W3C Validator showing my HTML](/docs/screenshots/main.jpg)
+
+The Sign-up page:
+No errors.
+
+![The W3C Validator showing my HTML](/docs/screenshots/suvalid.jpg)
+
+The Sign-in:
+
+![The W3C Validator showing my HTML](/docs/screenshots/sivalid.jpg)
+
+The Sign-out page:
+
+![The W3C Validator showing my HTML](/docs/screenshots/sovalid.jpg)
+
+- I used the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) to test my CSS. There were no errors:
+
+![The W3C Validator showing my CSS](/docs/screenshots/cssvalid.jpg)
 
 - I have tested my site using the devtools Lighthouse feature.
 
-![The lighthouse report showing every field is green]()
+![The lighthouse report](/docs/screenshots/lhreport.jpg)
 
 ---
 
