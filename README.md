@@ -27,17 +27,6 @@ Here you can see:
 
 ---
 
-
-### *Design Features:*
-
-- **Hero Image** ...
-
-- **Fonts** ...
-
-- **Colour-scheme** ...
-
-
-
 ## Technologies:
 
 - This site was created using these languages: Python, JavaScript, HTML and CSS.
@@ -61,39 +50,175 @@ Here you can see:
 - As a result all screenshots of different screen sizes are also taken from this simulator
 - Tested/ supported devices: Galaxy Fold, Moto G4, iPhone 4, 6, 7, 8, X, XR and 12 Pro, Pixel 5, Samsung Galaxy S8+, S20 Ultra and A51/71, iPad, iPad Air, Mini and Pro, Surface Pro 7, Surface Duo, Nest Hub and Nest Hub Max.
 
-### Test Cases
+### Screen Testing
+
+Upon opening the site the user should first see the home page:
 
 Home page on desktop:
+
+![homepage on desktop](/docs/screenshots/hpdesktop.jpg)
+
 Home page on tablet:
+
+![homepage on tablet](/docs/screenshots/hptablet.jpg)
+
 Home page on mobile:
 
-Signup page on desktop:
-Signup page on tablet:
-Signup page on mobile:
+![homepage on mobile](/docs/screenshots/hpmobile.jpg)
 
-Signup form on desktop:
-Signup form on tablet:
-Signup form on mobile:
+Clicking on 'Menu' in the navigation bar OR the 'Menu' button should take them to the menu page:
 
-Signout page on desktop:
-Signout page on tablet:
-Signout page on mobile:
+Menu page on desktop:
 
-Login page on desktop:
-Login page on tablet:
-Login page on mobile:
+![menu on desktop](/docs/screenshots/mdesktop.jpg)
 
-Login form on desktop:
-Login form on tablet:
-Login form on mobile:
+Menu page on tablet:
+
+![menu on tablet](/docs/screenshots/mtablet.jpg)
+
+Menu page on mobile:
+
+![menu on mobile](/docs/screenshots/mmobile.jpg)
+
+Clicking on 'Sign-up' in the navigation bar should take them to the sign up page:
+
+Sign up page on desktop:
+
+![sign up on desktop](/docs/screenshots/signupdesktop.jpg)
+
+Sign up page on tablet:
+
+![sign up on tablet](/docs/screenshots/signuptablet.jpg)
+
+Sign up page on mobile:
+
+![sign up on mobile](/docs/screenshots/signupmobile.jpg)
+
+Clicking on 'Sign-in' in the navigation bar should take them to the sign in page:
+
+Sign in page on desktop:
+
+![sign in on desktop](/docs/screenshots/signindesktop.jpg)
+
+Sign in page on tablet:
+
+![sign in on tablet](/docs/screenshots/signintablet.jpg)
+
+Sign in page on mobile:
+
+![sign in on mobile](/docs/screenshots/signinmobile.jpg)
+
+Clicking on 'Sign-out' in the navigation bar should take them to the sign out page:
+
+Sign out page on desktop:
+
+![sign out on desktop](/docs/screenshots/signoutdesktop.jpg)
+
+Sign out page on tablet:
+
+![sign out on tablet](/docs/screenshots/signouttablet.jpg)
+
+Sign out page on mobile:
+
+![sign out on mobile](/docs/screenshots/signoutmobile.jpg)
+
+Clicking on 'Bookings' in the navigation bar OR the 'Book' button should take them to the bookings page:
+
+Booking page on desktop:
+
+![Booking page on desktop](/docs/screenshots/bdesktop.jpg)
+
+Booking page on tablet:
+
+![Booking page on tablet](/docs/screenshots/btablet.jpg)
+
+Booking page on mobile:
+
+![Booking page on mobile](/docs/screenshots/bmobile.jpg)
+
+However if the user is not signed in yet they will be required to sign in first:
+
+Require sign in to book on desktop:
+
+![Booking page on desktop](/docs/screenshots/sidesktop.jpg)
+
+Require sign in to book on tablet:
+
+![Booking page on tablet](/docs/screenshots/sitablet.jpg)
+
+Require sign in to book on mobile:
+
+![Booking page on mobile](/docs/screenshots/simobile.jpg)
+
+Clicking on the 'Add Booking' button should take them to the add booking page:
 
 Add booking page on desktop:
+
+![add booking page on desktop](/docs/screenshots/adesktop.jpg)
+
 Add booking page on tablet:
+
+![add booking page on tablet](/docs/screenshots/atablet.jpg)
+
 Add booking page on mobile:
 
+![add booking page on mobile](/docs/screenshots/amobile.jpg)
+
+When the user clicks on the date field they will see this calendar to help them pick a date:
+
+![add booking date picker](/docs/screenshots/date.jpg)
+
+The time field also has a similar function:
+
+![add booking time picker](/docs/screenshots/time.jpg)
+
+None of the form fields can be left blank:
+
+![the name field is required](/docs/screenshots/fname.jpg)
+
+![the date field is required](/docs/screenshots/fdate.jpg)
+
+![the time field is required](/docs/screenshots/ftime.jpg)
+
+![the number of people field is required](/docs/screenshots/fpeople.jpg)
+
+If the user inputs a date in the past, they will be notified that they must enter a date in the future.
+
+![the date error message](/docs/screenshots/datepicker2.jpg)
+
+The same thing will happen if they try to edit a booking date to a date that is older than the current date.
+
+Likewise if they edit or create bookings on the same date they will notified and the booking form refreshed:
+
+![the date error message](/docs/screenshots/doublebooking.jpg)
+
+Clicking on the 'Edit' button on a booking should take them to the edit booking page:
+
 Edit booking page on desktop:
+
+![Edit booking page on desktop](/docs/screenshots/edesktop.jpg)
+
 Edit booking page on tablet:
+
+![Edit booking page on tablet](/docs/screenshots/etablet.jpg)
+
 Edit booking page on mobile:
+
+![Edit booking page on mobile](/docs/screenshots/emobile.jpg)
+
+Clicking on the 'Delete' button should trigger the delete modal on the bookings:
+
+Delete booking page on desktop:
+
+![Delete booking page on desktop](/docs/screenshots/ddesktop.jpg)
+
+Delete booking page on tablet:
+
+![Delete booking page on tablet](/docs/screenshots/dtablet.jpg)
+
+Delete booking page on mobile:
+
+![Delete booking page on mobile](/docs/screenshots/dmobile.jpg)
 
 ---
 
@@ -103,7 +228,7 @@ Edit booking page on mobile:
 
 HTML validation after errors fixed:
 
-![The W3C Validator showing no errors in my HTML]()
+![The W3C Validator showing no errors in my HTML](/docs/screenshots/cssvalid.jpg)
 
 - I used the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) to test my CSS. There were a couple of minor errors which were easy to fix, resulting in 0 errors.
 
