@@ -27,7 +27,7 @@ body {
 /* Hero Image */
 
 .masthead {
-    background-image: url(/static/images/sushi2.1.jpg);
+    background-image: url(https://res.cloudinary.com/dn0xxjn32/image/upload/v1685450817/static/images/sushi2.1.1126fbf71def.jpg);
     background-size: cover;
     min-height: 80vh;
     position: relative;
