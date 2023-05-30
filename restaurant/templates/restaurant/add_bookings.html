@@ -41,11 +41,11 @@
     const dateField = document.querySelector('[name="date"]');
     dateField.onchange = (event) => {
         if (new Date(event.target.value) < new Date()) {
-            dateField.nextElementSibling.innerText = "PLEASE PICK A FUTURE DATE!"
+            dateField.nextElementSibling.innerText = "PLEASE PICK A FUTURE DATE!";
         } else {
-            dateField.nextElementSibling.innerText = ""
+            dateField.nextElementSibling.innerText = "";
         }
-    }
+    };
 </script>
 
 {%endblock%}

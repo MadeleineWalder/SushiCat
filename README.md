@@ -2,9 +2,7 @@
 
 - SushiCat is my idea for a sushi restaurant and for this project I wanted to focus on making a booking system for the restaurant. That being said I also wanted to create a restaurant website that looked clean and professional using everything I've learned about front end development so far in my education. In my opinion I achieved both of these features; the booking system works how I intented and the website looks how I planned. One of my biggest worries for this project was how to handle the back end development. I learnt a great deal from coding this application as I figured out how to enable users to create an account, book, edit and delete a reservation. This is definitely a project that I would love to come back to and improve appon further after this course as I believe it is my highest quality project yet.
 
-- Image
-
-### Link to deployed site:
+### Link to deployed site: https://sushicat.herokuapp.com/
 
 ![Finished website on different devices]()
 
@@ -53,6 +51,8 @@ Here you can see:
 
 Upon opening the site the user should first see the home page:
 
+This includes the navbar, hero image, main buttons and footer.
+
 Home page on desktop:
 
 ![homepage on desktop](/docs/screenshots/hpdesktop.jpg)
@@ -65,7 +65,7 @@ Home page on mobile:
 
 ![homepage on mobile](/docs/screenshots/hpmobile.jpg)
 
-Tests passed.
+Outcome: tests passed
 
 Clicking on 'Menu' in the navigation bar OR the 'Menu' button should take the user to the menu page:
 
@@ -81,7 +81,7 @@ Menu page on mobile:
 
 ![menu on mobile](/docs/screenshots/mmobile.jpg)
 
-Tests passed.
+Outcome: tests passed
 
 Clicking on 'Sign-up' in the navigation bar should take the user to the sign up page:
 
@@ -113,7 +113,7 @@ The email must be in email format:
 
 ![email in valid format required](/docs/screenshots/email.jpg)
 
-Tests passed.
+Outcome: tests passed
 
 Clicking on 'Sign-in' in the navigation bar should take them to the sign in page:
 
@@ -135,8 +135,7 @@ The Sign-in form requires the users username and password:
 
 ![users password](/docs/screenshots/password.jpg)
 
-
-Tests passed.
+Outcome: tests passed
 
 Clicking on 'Sign-out' in the navigation bar should take them to the sign out page:
 
@@ -152,7 +151,7 @@ Sign out page on mobile:
 
 ![sign out on mobile](/docs/screenshots/signoutmobile.jpg)
 
-Tests passed.
+Outcome: tests passed
 
 Clicking on 'Bookings' in the navigation bar OR the 'Book' button should take them to the bookings page:
 
@@ -168,7 +167,7 @@ Booking page on mobile:
 
 ![Booking page on mobile](/docs/screenshots/bmobile.jpg)
 
-Tests passed.
+Outcome: tests passed
 
 However if the user is not signed in yet they will be required to sign in first:
 
@@ -184,7 +183,7 @@ Require sign in to book on mobile:
 
 ![Booking page on mobile](/docs/screenshots/simobile.jpg)
 
-Tests passed.
+Outcome: tests passed
 
 Clicking on the 'Add Booking' button should take them to the add booking page:
 
@@ -226,9 +225,9 @@ The same thing will happen if they try to edit a booking date to a date that is 
 
 Likewise if they edit or create bookings on the same date they will notified and the booking form refreshed:
 
-![the date error message](/docs/screenshots/doublebooking.jpg)
+![the double booking error message](/docs/screenshots/doublebooking.jpg)
 
-Tests passed.
+Outcome: tests passed
 
 Clicking on the 'Edit' button on a booking should take them to the edit booking page:
 
@@ -245,8 +244,7 @@ Edit booking page on tablet:
 Edit booking page on mobile:
 
 ![Edit booking page on mobile](/docs/screenshots/emobile.jpg)
-
-Tests passed.
+Outcome: tests passed
 
 Clicking on the 'Delete' button should trigger the delete modal on the bookings:
 
@@ -262,7 +260,14 @@ Delete booking page on mobile:
 
 ![Delete booking page on mobile](/docs/screenshots/dmobile.jpg)
 
-All tests passed.
+Outcome: tests passed
+
+My site also has a custom 404 page. If the user were to enter a url that doesn't exist it should be displayed:
+If the user clicks the button they should return to the homepage.
+
+![displying custom 404 page](/docs/screenshots/404.jpg)
+
+Outcome: tests passed
 
 ---
 
@@ -307,6 +312,59 @@ The Sign-out page:
 
 ![The W3C Validator showing my CSS](/docs/screenshots/cssvalid.jpg)
 
+- I used the [CI Python Validator](https://pep8ci.herokuapp.com/) to test my python:
+
+My models.py file had no errors:
+
+![python validator testing my code](/docs/screenshots/models.jpg)
+
+My forms.py file had no errors:
+
+![python validator testing my code](/docs/screenshots/forms.jpg)
+
+My views.py file had no errors:
+
+![python validator testing my code](/docs/screenshots/views.jpg)
+
+My urls.py files had no errors except one path which made the line too long:
+
+![python validator testing my code](/docs/screenshots/urls1.jpg)
+
+![python validator testing my code](/docs/screenshots/urls2.jpg)
+
+I did not want to change this as I was worried it would effect the path.
+
+My widgets.py file had no errors:
+
+![python validator testing my code](/docs/screenshots/widgets.jpg)
+
+My manage.py file had no errors:
+
+![python validator testing my code](/docs/screenshots/manage.jpg)
+
+My admin.py file had no errors:
+
+![python validator testing my code](/docs/screenshots/admin.jpg)
+
+My wsgi.py file had no errors:
+
+![python validator testing my code](/docs/screenshots/wsgi.jpg)
+
+My settings.py file had a few ling too long errors:
+
+![python validator testing my code](/docs/screenshots/settings.jpg)
+
+I could not fix these errors and code is still functioning as intended so I left them alone.
+As you can see in this screenshot above, line 124, 127, 130 and 133 cannot be made shorter, at least to my knowledge.
+
+- I used [JSHint](https://jshint.com/) to test my JavaScript:
+
+![JSHint validator testing my code](/docs/screenshots/js.jpg)
+
+As you can see the only errors were missing semi-colons so I added these.
+
+![JSHint validator testing my code](/docs/screenshots/js1.jpg)
+
 - I have tested my site using the devtools Lighthouse feature.
 
 ![The lighthouse report](/docs/screenshots/lhreport.jpg)
@@ -341,6 +399,6 @@ The Sign-out page:
 - Back in Heroku I went to the deployment tab for my app and selected Github. Then I searched for and selected my repository.
 - At the bottom of the page I ticked the box to enable automatic deploys, and the clicked deploy.
 
-Link to deployed site:
+Link to deployed site: https://sushicat.herokuapp.com/
 
 ---

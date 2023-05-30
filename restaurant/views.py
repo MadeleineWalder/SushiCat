@@ -52,7 +52,11 @@ def add_bookings(request):
             # set an error message
             messages.error(request, "You have already booked that day")
             # return to booking page
-            return render(request, 'restaurant/add_bookings.html', {'form': BookingForm()})
+            return render(
+                request,
+                'restaurant/add_bookings.html',
+                {'form': BookingForm()}
+            )
 
         form.instance.customer = request.user
         form.save()
@@ -91,7 +95,11 @@ def edit_booking(request, booking_id):
             # set an error message
             messages.error(request, "You have already booked that day")
             # return to booking page
-            return render(request, 'restaurant/add_bookings.html', {'form': BookingForm()})
+            return render(
+                request,
+                'restaurant/add_bookings.html',
+                {'form': BookingForm()}
+            )
 
         form.instance.customer = request.user
         form.save()
