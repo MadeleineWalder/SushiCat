@@ -49,7 +49,7 @@ Here you can see:
 - As a result all screenshots of different screen sizes are also taken from this simulator
 - Tested/ supported devices: Galaxy Fold, Moto G4, iPhone 4, 6, 7, 8, X, XR and 12 Pro, Pixel 5, Samsung Galaxy S8+, S20 Ultra and A51/71, iPad, iPad Air, Mini and Pro, Surface Pro 7, Surface Duo, Nest Hub and Nest Hub Max.
 
-### Screen Testing
+### Test Cases
 
 Upon opening the site the user should first see the home page:
 
@@ -65,7 +65,9 @@ Home page on mobile:
 
 ![homepage on mobile](/docs/screenshots/hpmobile.jpg)
 
-Clicking on 'Menu' in the navigation bar OR the 'Menu' button should take them to the menu page:
+Tests passed.
+
+Clicking on 'Menu' in the navigation bar OR the 'Menu' button should take the user to the menu page:
 
 Menu page on desktop:
 
@@ -79,7 +81,9 @@ Menu page on mobile:
 
 ![menu on mobile](/docs/screenshots/mmobile.jpg)
 
-Clicking on 'Sign-up' in the navigation bar should take them to the sign up page:
+Tests passed.
+
+Clicking on 'Sign-up' in the navigation bar should take the user to the sign up page:
 
 Sign up page on desktop:
 
@@ -92,6 +96,24 @@ Sign up page on tablet:
 Sign up page on mobile:
 
 ![sign up on mobile](/docs/screenshots/signupmobile.jpg)
+
+The Sign-up form requires the user to fill out all fields except the optional email field:
+
+![username required](/docs/screenshots/unrequired.jpg)
+
+![password required](/docs/screenshots/pwrequired.jpg)
+
+![same password required](/docs/screenshots/pw2required.jpg)
+
+Password fields must be the same and the password cannot be too simple:
+
+![password too common](/docs/screenshots/pwc.jpg)
+
+The email must be in email format:
+
+![email in valid format required](/docs/screenshots/email.jpg)
+
+Tests passed.
 
 Clicking on 'Sign-in' in the navigation bar should take them to the sign in page:
 
@@ -107,6 +129,15 @@ Sign in page on mobile:
 
 ![sign in on mobile](/docs/screenshots/signinmobile.jpg)
 
+The Sign-in form requires the users username and password:
+
+![users username](/docs/screenshots/username.jpg)
+
+![users password](/docs/screenshots/password.jpg)
+
+
+Tests passed.
+
 Clicking on 'Sign-out' in the navigation bar should take them to the sign out page:
 
 Sign out page on desktop:
@@ -120,6 +151,8 @@ Sign out page on tablet:
 Sign out page on mobile:
 
 ![sign out on mobile](/docs/screenshots/signoutmobile.jpg)
+
+Tests passed.
 
 Clicking on 'Bookings' in the navigation bar OR the 'Book' button should take them to the bookings page:
 
@@ -135,6 +168,8 @@ Booking page on mobile:
 
 ![Booking page on mobile](/docs/screenshots/bmobile.jpg)
 
+Tests passed.
+
 However if the user is not signed in yet they will be required to sign in first:
 
 Require sign in to book on desktop:
@@ -148,6 +183,8 @@ Require sign in to book on tablet:
 Require sign in to book on mobile:
 
 ![Booking page on mobile](/docs/screenshots/simobile.jpg)
+
+Tests passed.
 
 Clicking on the 'Add Booking' button should take them to the add booking page:
 
@@ -191,7 +228,11 @@ Likewise if they edit or create bookings on the same date they will notified and
 
 ![the date error message](/docs/screenshots/doublebooking.jpg)
 
+Tests passed.
+
 Clicking on the 'Edit' button on a booking should take them to the edit booking page:
+
+It is the same form as for adding a new booking and has all the same funtionality.
 
 Edit booking page on desktop:
 
@@ -204,6 +245,8 @@ Edit booking page on tablet:
 Edit booking page on mobile:
 
 ![Edit booking page on mobile](/docs/screenshots/emobile.jpg)
+
+Tests passed.
 
 Clicking on the 'Delete' button should trigger the delete modal on the bookings:
 
@@ -219,6 +262,8 @@ Delete booking page on mobile:
 
 ![Delete booking page on mobile](/docs/screenshots/dmobile.jpg)
 
+All tests passed.
+
 ---
 
 ### Validator Testing
@@ -226,9 +271,9 @@ Delete booking page on mobile:
 - I used the [W3C HTML Validator](https://validator.w3.org/#validate_by_input) to test my html.
 
 The home page:
-The results showed an error in two places where an anchor tag is wrapping the buttons. I did some research and I couldn't find out **why** this is bad practise. I even found one website which gave an example of some html where the button was wrapped in anchor tags. The website actually offers coding course which I almost enrolled on myself. A link to the page is here: https://www.shecodes.io/athena/17038-how-to-add-a-link-to-my-button-in-html
+The results showed an error in two places where an anchor tag is wrapping the buttons. I did some research and I couldn't find out **why** this is bad practise. I even found one website which gave an example of some html where the button was wrapped in anchor tags. The website actually offers coding courses which I almost enrolled in myself. A link to the page is here: https://www.shecodes.io/athena/17038-how-to-add-a-link-to-my-button-in-html
 
-The only other solution I could find was to remove the button tags and use divs instead, but style them like buttons. Unfortunately I dont think I will have time to implement this as I'm worried about the implications this will cause so close to my deadline.
+The only other solution I could find was to remove the button tags and use divs instead, but style them like buttons. Unfortunately I dont think I will have time to implement this as I'm worried about the implications this will cause to the layout of my site so close to my deadline.
 
 ![The W3C Validator showing my HTML](/docs/screenshots/hpvalid1.jpg)
 
@@ -272,18 +317,18 @@ The Sign-out page:
 
 ### Gitpod
 
-- Typing 'python3 manage.py runserver' into the Gitpod terminal allows you to view a preview of the site in a browser
-- Every time a secton of code is added the browser can be refreshed to see the change, sometimes you need to press ctrl + shift + R for changes to be updated
-- To save and commit progress, type 'git add .' into the terminal to add all your changes followed by 'git commit -m' and then your message describing what you did in double quotes
-- Typing 'git push' will then push your code, and this should be done at the end of every coding session or whenever you want an already deployed site to be updated
+- Typing 'python3 manage.py runserver' into the Gitpod terminal allows you to view a preview of the site in a browser.
+- Every time a secton of code is added the browser can be refreshed to see the change, sometimes you need to press ctrl + shift + R for changes to be updated.
+- To save and commit progress, type 'git add .' into the terminal to add all your changes followed by 'git commit -m' and then your message describing what you did in double quotes.
+- Typing 'git push' will then push your code, and this should be done at the end of every coding session or whenever you want an already deployed site to be updated.
 
 
-### Github and Github Pages
+### ElephantSQL
 
-- To deploy my site I first went to Github and found my project repository on the left hand side and clicked it
-- I then clicked on 'Settings' and then the 'Pages' option on the left   
-- Here I changed the branch from 'none' to 'main'
-- Finally I clicked save and after a short while it produced a link to my deployed site
+- I used ElephantSQL to install and manage the database. I had already set up an account so I could log in and begin.
+- I clicked on the green 'Create New Instance' button in the top right.
+- I added details such as name, region and the type of plan I wanted which was the free 'Tiny Turtle' plan.
+- My database url was then provided for me to copy and use later on.
 
 
 ### Heroku

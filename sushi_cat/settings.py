@@ -31,7 +31,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['sushicat.herokuapp.com', 'localhost', '8000-madeleinewalde-sushicat-okm39yv1v6v.ws-eu97.gitpod.io']
 
