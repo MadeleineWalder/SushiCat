@@ -1,18 +1,16 @@
 # SushiCat
 
-- SushiCat is my idea for a sushi restaurant and for this project I wanted to focus on making a booking system for the restaurant. That being said I also wanted to create a restaurant website that looked clean and professional using everything I've learned about front end development so far in my education. In my opinion I achieved both of these features; the booking system works how I intented and the website looks how I planned. One of my biggest worries for this project was how to handle the back end development. I learnt a great deal from coding this application as I figured out how to enable users to create an account, book, edit and delete a reservation. This is definitely a project that I would love to come back to and improve appon further after this course as I believe it is my highest quality project yet.
+SushiCat is my idea for a sushi restaurant and for this project I wanted to focus on making a booking system for the restaurant. That being said I also wanted to create a restaurant website that looked clean and professional using everything I've learned about front end development so far in my education. In my opinion I achieved both of these features; the booking system works how I intented and the website looks how I planned. One of my biggest worries for this project was how to handle the back end development. I learnt a great deal from coding this application as I figured out how to enable users to create an account, book, edit and delete a reservation. This is definitely a project that I would love to come back to and improve appon further after this course as I believe it is my highest quality project yet.
 
 ### Link to deployed site: https://sushicat.herokuapp.com/
 
 ![Finished website on different devices]()
 
-[Photo taken using amiresponsive.com](https://ui.dev/amiresponsive)
-
 ---
 
-## Link to Project Board
+## Project Board
 
-https://github.com/users/MadeleineWalder/projects/5
+### Link: https://github.com/users/MadeleineWalder/projects/5
 
 Here you can see:
 - The wireframe
@@ -265,7 +263,17 @@ Outcome: tests passed
 My site also has a custom 404 page. If the user were to enter a url that doesn't exist it should be displayed:
 If the user clicks the button they should return to the homepage.
 
-![displying custom 404 page](/docs/screenshots/404.jpg)
+The 404 page on desktop:
+
+![custom 404 page desktop](/docs/screenshots/404.jpg)
+
+The 404 page on tablet:
+
+![custom 404 page tablet](/docs/screenshots/404t.jpg)
+
+The 404 page on mobile:
+
+![custom 404 page mobile](/docs/screenshots/404m.jpg)
 
 Outcome: tests passed
 
