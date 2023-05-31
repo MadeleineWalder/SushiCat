@@ -2,9 +2,9 @@
 
 SushiCat is my idea for a sushi restaurant and for this project I wanted to focus on making a booking system for the restaurant. That being said I also wanted to create a restaurant website that looked clean and professional using everything I've learned about front end development so far in my education. In my opinion I achieved both of these features; the booking system works how I intented and the website looks how I planned. One of my biggest worries for this project was how to handle the back end development. I learnt a great deal from coding this application as I figured out how to enable users to create an account, book, edit and delete a reservation. This is definitely a project that I would love to come back to and improve appon further after this course as I believe it is my highest quality project yet.
 
-### Link to deployed site: https://sushicat.herokuapp.com/
+![Finished website on different devices](/docs/screenshots/finishedsushi.jpg)
 
-![Finished website on different devices]()
+### Link to deployed site: https://sushicat.herokuapp.com/
 
 ---
 
@@ -13,7 +13,7 @@ SushiCat is my idea for a sushi restaurant and for this project I wanted to focu
 ### Link: https://github.com/users/MadeleineWalder/projects/5
 
 Here you can see:
-- The wireframe
+- The Wireframe
 - User Stories
 - Design Features
 - Structural Features
@@ -26,13 +26,14 @@ Here you can see:
 
 - This site was created using these languages: Python, JavaScript, HTML and CSS.
 - Frameworks/Libraries: Django and Bootstrap.
+- Allauth was used to create the log-in/out and sign-up forms.
 - Github and Gitpod are the platforms where I created this website. Github (and Gihub pages) for creating and storing my repositories and project board/issues, and Gitpod for writing the code.
 - Heroku for deployment.
 - Unicorn Revealer is an extension for Chrome which I used to help me see the different elements of my site clearly.
 - [Google Fonts](https://fonts.google.com/) is where I imported my fonts from.
 - [Fontawesome](https://fontawesome.com/) is the website where I sourced my social media icons.
 - [Pexels](https://www.pexels.com/) is the website I used to source the hero image.
-- I used the website [amiresponsive.com](https://ui.dev/amiresponsive) to show my finished site on different devices at the top of this page.
+- I used the website [amiresponsive.co.uk](https://amiresponsive.co.uk/) to show my finished site on different devices at the top of this page.
 
 ---
 
@@ -45,7 +46,7 @@ Here you can see:
 - As a result all screenshots of different screen sizes are also taken from this simulator
 - Tested/ supported devices: Galaxy Fold, Moto G4, iPhone 4, 6, 7, 8, X, XR and 12 Pro, Pixel 5, Samsung Galaxy S8+, S20 Ultra and A51/71, iPad, iPad Air, Mini and Pro, Surface Pro 7, Surface Duo, Nest Hub and Nest Hub Max.
 
-### Test Cases
+### Test Cases:
 
 Upon opening the site the user should first see the home page:
 
@@ -148,6 +149,28 @@ Sign out page on tablet:
 Sign out page on mobile:
 
 ![sign out on mobile](/docs/screenshots/signoutmobile.jpg)
+
+Outcome: tests passed
+
+When the user signs in or out an alert should pop up to notify them:
+
+Alert on desktop:
+
+![Alert on desktop](/docs/screenshots/alertd1.jpg)
+
+![Alert on desktop](/docs/screenshots/alertd.jpg)
+
+Alert on tablet:
+
+![Alert on tablet](/docs/screenshots/alertt1.jpg)
+
+![Alert on tablet](/docs/screenshots/alertt.jpg)
+
+Alert on mobile:
+
+![Alert on mobile](/docs/screenshots/alertm1.jpg)
+
+![Alert on mobilep](/docs/screenshots/alertm.jpg)
 
 Outcome: tests passed
 
